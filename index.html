@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/styles/styles.css">
+    <link rel="shortcut icon" href="./assests/images/burger-icons.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="burger">
+        <section class="container">
+            <form class="burger__form" autocomplete="off" action="list-burger/burger.html">
+                <h1>Burger</h1>
+
+                <div class="burger__formInput">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="burger__formInput">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <div class="burger__formContainer">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div><img src="./assests/images/flag/indiaflag.jpg" width="20" height="15"> IND</div>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="dropContent"><img src="./assests/images/flag/usaflag.jpg" width="20"
+                                        height="15"> USA</div>
+                                <div class="dropContent"><img src="./assests/images/flag/engflag.jpg" width="20"
+                                        height="15"> ENG</div>
+                                <div class="dropContent"><img src="./assests/images/flag/braflag.jpg" width="20"
+                                        height="15"> BR</div>
+                                <div class="dropContent"><img src="./assests/images/flag/indiaflag.jpg" width="20"
+                                        height="15"> IND</div>
+                            </div>
+                        </div>
+
+                        <input type="number" min="0" max="9999999999" id="mobileNumber" class="mobileInput" required>
+                    </div>
+                </div>
+                <button class="burger__formInput btn" type="submit">Enter</button>
+            </form>
+        </section>
+
+        <section class="alertContainer">
+            <div class="alert alert-danger alertDiv alertDisable" role="alert">
+                Please enter 10 digit mobile number
+            </div>
+        </section>
+    </main>
+
+    <script src="./assests/js/app.js"></script>
+</body>
+
+</html>

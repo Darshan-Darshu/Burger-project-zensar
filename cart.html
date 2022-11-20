@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/styles/cart.css">
+    <link rel="shortcut icon" href="./assests/images/carts.ico" type="image/x-icon">
+    <title>Cart</title>
+</head>
+
+<body>
+    <main>
+        <section class="mycartheader">
+            <h1>My Cart</h1>
+
+        </section>
+
+        <section class="cartContainer">
+            <div class="cart" id="mycartId">
+            </div>
+            <div class="total">
+                <h1>Burger Shop</h1>
+                <p id="phoneNumber">Mobile No: +<span id="numberId"></span> <span id="phone">Required</span></p>
+                <h2 id="cartItemsPrice">Total Price:</h2>
+                <div class="total__qty">
+                    <p id="cartItemsQuantity"></p>
+                    <p id="cartItemsLength"></p>
+                </div>
+                <button class="placeOrder">Place Order</button>
+            </div>
+        </section>
+
+        <section class="alertContainer">
+            <div class="alert alert-success alertDiv alertDisable" role="alert">
+                Your Burger order is successfully placed
+            </div>
+        </section>
+    </main>
+
+    <script src="./assests/js/cart.js"></script>
+</body>
+
+</html>
